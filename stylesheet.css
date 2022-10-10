@@ -319,6 +319,8 @@ span {
     border-radius: 10px;
     padding: 2%;
     margin: 7.5% 2.5%;
+    overflow: auto;
+    /* added scrollbar so that it doesn't over flow */
 }
 
 .description p,
@@ -455,6 +457,7 @@ tr,td{
 .portfolio-container {
     position: relative;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
     left: 5%;
     right: 5%;
@@ -674,6 +677,15 @@ svg {
     width: 100%;
     margin-top: 5%;
 }
+
+/* making contact form more responsive */
+@media only screen and (max-width: 1200px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+  }
 
 .contact-image {
     margin-top: 10%;
