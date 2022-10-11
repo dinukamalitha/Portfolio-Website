@@ -576,7 +576,16 @@
             message: message
         });
 
+        clearTextField();
+
     });
+
+    function clearTextField() {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        document.getElementById("tel").value = "";
+    }
 
 
 </script>
